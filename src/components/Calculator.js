@@ -14,7 +14,6 @@ class Calculator extends React.Component {
 					+/-
 				</button>
 				<button name="CE" onClick={this.buttonClick}>
-					<i className="fas fa-backspace" />
 					CE
 				</button>
 				<button

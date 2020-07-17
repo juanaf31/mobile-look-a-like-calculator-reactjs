@@ -1,85 +1,128 @@
-*{
-  margin:0;
-  padding: 0;
-  box-sizing: border-box;
-  
+/* * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-body{
-  background: #091921;
-  font-family: 'Poppins', sans-serif;
-}
+body {
+	background: #091921;
+	font-family: 'Poppins', sans-serif;
+} */
 .App {
-  text-align: center;
-  min-height: 100vh;
+	margin-top: -10px;
+	text-align: center;
+	min-height: 100vh;
+	background: #091921;
 }
 
-.Output input{
-  height: 220px;
-  justify-content: flex-end;
-  background-color: rgb(230, 207, 207);
-  width: 100%;
-  font-size: 50px;
+.Output input {
+	height: 220px;
+	justify-content: flex-end;
+	background-color: rgb(255, 255, 255);
+	width: 100%;
+	font-size: 50px;
 }
 
-.calc-body{
-  max-width: 400px;
-  margin: auto;
+.calc-body {
+	max-width: 400px;
+	margin: auto;
 }
 
-.Buttons{
-  display: block;
-  background-color: white;
+.Buttons {
+	display: block;
+	background-color: white;
 }
 
-.Buttons button{
-  width: 25%;
-  height: 60px;
-  font-size: 25px;
-  background-color: white;
+.Buttons button {
+	width: 25%;
+	height: 60px;
+	font-size: 25px;
+	background-color: white;
 }
 
 .smartphone {
-  position: relative;
-  width: 360px;
-  height: 640px;
-  margin: auto;
-  border: 16px black solid;
-  border-top-width: 60px;
-  border-bottom-width: 60px;
-  border-radius: 36px;
+	position: relative;
+	width: 360px;
+	height: 640px;
+	margin: auto;
+	border: 16px black solid;
+	border-top-width: 60px;
+	border-bottom-width: 60px;
+	border-radius: 36px;
 }
 
-/* The horizontal line on the top of the device */
+/* buat horizontal line di atas gambar device */
 .smartphone:before {
-  content: '';
-  display: block;
-  width: 60px;
-  height: 5px;
-  position: absolute;
-  top: -30px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #333;
-  border-radius: 10px;
+	content: '';
+	display: block;
+	width: 60px;
+	height: 5px;
+	position: absolute;
+	top: -30px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #333;
+	border-radius: 10px;
 }
 
-/* The circle on the bottom of the device */
+/* buat gambar lingkaran setelah gambar device */
 .smartphone:after {
-  content: '';
-  display: block;
-  width: 35px;
-  height: 35px;
-  position: absolute;
-  left: 50%;
-  bottom: -65px;
-  transform: translate(-50%, -50%);
-  background: #333;
-  border-radius: 50%;
+	content: '';
+	display: block;
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	left: 50%;
+	bottom: -65px;
+	transform: translate(-50%, -50%);
+	background: #333;
+	border-radius: 50%;
 }
 
 /* The screen (or content) of the device */
 .smartphone .content {
-  width: 360px;
-  height: 640px;
-  background: white;
+	width: 360px;
+	height: 640px;
+	background: white;
+}
+
+.btn-back {
+	position: absolute;
+	margin-top: -45px;
+	margin-left: 40px;
+	width: 100px;
+	height: 30px;
+	background: black;
+	border: none;
+}
+
+.Home {
+	background-image: url(img/images2.jpg);
+	width: 327px;
+	height: 520px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	position: absolute;
+}
+.menus {
+	margin-top: 200px;
+}
+.Home img {
+	margin-top: 20px;
+	width: 25%;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.btn-calc {
+	height: 70px;
+	border: none;
+}
+
+.Note {
+	background-color: white;
+	width: 327px;
+	height: 520px;
+	overflow: scroll;
 }

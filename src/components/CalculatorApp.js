@@ -20,6 +20,8 @@ class CalculatorApp extends Component {
 			this.setState({
 				result: this.state.result.slice(0, -1)
 			});
+		} else if (this.state.result.length <= 1 && this.state.result.substring(0, 1) === '0' && buttonName !== '.') {
+			this.setState({ result: buttonName });
 		} else {
 			this.setState({ result: this.state.result + buttonName });
 		}
