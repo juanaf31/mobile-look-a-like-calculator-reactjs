@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import uuid from 'uuid';
 import TodoInput from './todo/TodoInput';
 import TodoList from './todo/TodoList';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Swal from 'sweetalert2';
 
 class Note extends Component {

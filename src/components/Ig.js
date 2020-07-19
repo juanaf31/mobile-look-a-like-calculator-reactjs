@@ -5,6 +5,7 @@ class Ig extends Component {
 		return (
 			<div className="Ig">
 				<img src={IgPict} style={{ width: '325px', height: '520px' }} />
+				{/* <iframe src="https://www.google.com/" /> */}
 			</div>
 		);
 	}

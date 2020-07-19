@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import CalculatorApp from './CalculatorApp';
-import Home from './Home';
+import HomePhone from './HomePhone';
 import Note from './Note';
 import Ig from './Ig';
+import FectGetApi from './FectGetApi';
 class Phone extends Component {
 	state = {
 		menu: ''
@@ -18,6 +19,10 @@ class Phone extends Component {
 		});
 	};
 
+	onButtonLogoutClicked = () => {
+		this.props.onLogout();
+	};
+
 	render() {
 		let screen;
 		if (this.state.menu === 'calculator') {
@@ -26,11 +31,13 @@ class Phone extends Component {
 			screen = <Note />;
 		} else if (this.state.menu == 'ig') {
 			screen = <Ig />;
+		} else if (this.state.menu == 'fetch') {
+			screen = <FectGetApi />;
 		} else {
-			screen = <Home buttonClick={this.onButtonClick} />;
+			screen = <HomePhone buttonClick={this.onButtonClick} logoutClick={this.onButtonLogoutClicked} />;
 		}
 		return (
-			<div>
+			<div className="Phone">
 				<div className="smartphone" style={{ marginTop: '10px' }}>
 					{screen}
 				</div>

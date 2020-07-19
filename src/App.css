@@ -1,17 +1,21 @@
-/* * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-body {
-	background: #091921;
-	font-family: 'Poppins', sans-serif;
-} */
 .App {
 	margin-top: -10px;
 	text-align: center;
+	/* background: #091921; */
+}
+
+.bg-img {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top:0;
+	bottom: 0;
+	z-index: -1;
+	filter: blur(3px);
 	min-height: 100vh;
-	background: #091921;
+	background-image: url(img/paris.gif);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .Output input {
@@ -44,7 +48,7 @@ body {
 	width: 360px;
 	height: 640px;
 	margin: auto;
-	border: 16px black solid;
+	border: 16px rgb(0, 0, 0) solid;
 	border-top-width: 60px;
 	border-bottom-width: 60px;
 	border-radius: 36px;
@@ -89,14 +93,14 @@ body {
 	position: absolute;
 	margin-top: -45px;
 	margin-left: 40px;
-	width: 100px;
-	height: 30px;
-	background: black;
+	width: 110px;
+	height: 35px;
+	background-color: black;
 	border: none;
 }
 
 .Home {
-	background-image: url(img/images2.jpg);
+	background-image: url(img/paris.gif);
 	width: 327px;
 	height: 520px;
 	background-position: center;
@@ -124,5 +128,67 @@ body {
 	background-color: white;
 	width: 327px;
 	height: 520px;
-	overflow: scroll;
+	overflow: auto;
+}
+
+.Login{
+	position: fixed;
+	top: 300px;
+	left: 550px;
+	right: 450px;
+	
+
+}
+.Login h1{
+	background-image: url(img/tr.png);
+}
+
+.Login form input, form button{
+	/* display: flex;
+	flex-direction: column;
+	margin-top: 30px; */
+  width: 212px;
+  border: 1px solid;
+  border-bottom-color: rgba(255,255,255,.5);
+  border-right-color: rgba(60,60,60,.35);
+  border-top-color: rgba(60,60,60,.35);
+  border-left-color: rgba(80,80,80,.45);
+  background-color: rgba(0,0,0,.2);
+  background-repeat: no-repeat;
+  padding: 8px 24px 8px 10px;
+  font: bold .875em/1.25em "Open Sans Condensed", sans-serif;
+  letter-spacing: .075em;
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0,0,0,.1);
+  margin-bottom: 19px;
+  background-image: url(img/tr.png);
+}
+.Login .card{
+	background: rgba(130,130,130,.9)
+}
+
+.formLogin{
+	background-color: rgba(0,0,0,0.5);
+	position: fixed;
+	left: 900px;
+	bottom: 200px;
+	width: 300px;
+	height: 300px;
+	padding: 8px 24px 8px 10px;
+    letter-spacing: .075em;
+    color: #fff;
+    margin-bottom: 19px;
+    text-shadow: 0 1px 0 rgba(0,0,0,.1);
+}
+
+.formLogin input,button{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.under{
+	background-color: rgb(246, 95, 95);
+	height: 5px;
+	width: 20.5%;
+	position: fixed;
 }
